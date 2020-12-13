@@ -5,6 +5,8 @@ const { getAllPosts, addNewPost } = require("./server-classes/static-db.js");
 const connectDB = require("./server-classes/db.js");
 const Post = require("./server-classes/Post");
 
+// Push za heroku
+
 // povezivanje sa env fajlom na nasem kompu
 dotenv.config();
 
