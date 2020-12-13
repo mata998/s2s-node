@@ -29,6 +29,11 @@ btnSend.addEventListener("click", async () => {
   const author = inputAuthor.value;
   const text = inputText.value;
 
+  if (author == "" || text == "") {
+    alert("Popunite post kako treba!");
+    return;
+  }
+
   const resp = await axios.post("/api/posts", {
     author: author,
     text: text,
